@@ -1,0 +1,326 @@
+
+// standard values for main-content centering
+$standard-width: 500px;
+$centre-margin: 0 auto;
+
+// standard values for textfields
+$input-height: 40px;
+$input-fontsize: 19px;
+$input-padding: 0 10px;
+
+body{
+background-color: #f4f4f6;
+}
+ 
+main{
+width: 99.99%;
+max-width: 800px;
+margin: $centre-margin;
+}
+ 
+  // NAVIGATION BAR FOR THE WHOLE WEBSITE
+.navbar {
+  padding: 0 30px;
+  .navbar-brand {
+    a {
+      color: #444;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+/*
+
+  index.php
+  All css for code within <main>
+
+*/
+.index-main {
+
+  header {
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      font-size: 70px;
+    }
+  }
+
+  form {
+    width: 300px;
+    margin: 40px auto;
+
+    input {
+      width: 100%;
+      height: $input-padding;
+      font-size: $input-fontsize;
+      padding: $input-padding;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+      height: 40px;
+    }
+  }
+
+}
+
+
+
+/*
+
+  write.php
+  All css for code within <main>
+
+*/
+#write-main {
+ 
+  header {
+    padding-top: 20px;
+    color: #777;
+    margin: 0;
+  }
+
+  textarea {
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    min-height: 400px;
+    height: $input-height;
+    font-size: $input-fontsize;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: $input-padding;
+    height: $input-height;
+    font-size: $input-fontsize;
+  }
+  
+  button{
+	display: inline-block;
+	float: left;
+	margin: 20px 5px;
+	}
+
+  #error-check {
+    display: inline-block;
+    color: #B94A48;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Helvetica, sans-serif;
+    margin: 20px 10px;
+  }
+
+}
+
+
+
+/*
+
+  review.php
+  All css for code within <main>
+
+*/
+#note-confirm{
+
+	.alert{
+		border-width: 2px;
+	}
+	
+	button{
+	display: block;
+	margin: 20px auto;
+	}
+
+}
+
+
+
+/*
+
+  notes.php
+  All css for code within <notes.php>
+
+*/
+
+
+#list-notes-main{
+
+    h1{
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 20px;
+	}
+
+	h2{
+		font-size: 18px;
+	}
+
+    .messageCenter{
+      text-align: center;
+      padding: 4.0em;
+      h1{
+        padding: 1.0em;
+      }
+    }
+
+    .list-group {
+      margin: 10px 0;
+
+        .list-group-item {
+
+            .list-group-item-text {
+              display: inline-block;
+              width: 70%;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+
+           .note-date {
+             float: right;
+             margin: 0;
+           }
+
+        }
+    }
+
+}
+
+/*
+
+  view-note.php
+  All css for code within <view-notes.php>
+
+*/
+
+#view-note-main{
+
+  h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px;
+  }
+  
+  #date{
+  float: right;
+  margin: 0.5em;
+  }
+  
+  .back-button{
+  display: inline-block;
+  width: 70%;
+  margin: 0.5em
+  }
+  
+  .content{
+  text-align: left;
+  white-space: pre-wrap;
+  }
+  
+}
+
+
+
+
+/*
+
+  register.php
+  All css for code within <main>
+
+*/
+.register-main {
+width: $standard-width;
+
+  header {
+    padding-top: 20px;
+    width: 500px;
+    color: #777;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 75%;
+    margin-bottom: 10px;
+    padding: $input-padding;
+    height: $input-height;
+    font-size: $input-fontsize;
+  }
+
+  span {
+    color: #B94A48;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+  .tick {
+    font-family: 'Glyphicons Halflings';
+    color: limegreen;
+    font-size: x-large;
+  }
+
+}
+
+
+
+/*
+
+  login.php
+  All css for code within <main>
+
+*/
+.login-main {
+width: $standard-width;
+
+  header {
+    padding-top: 20px;
+    width: 500px;
+    color: #777;
+    margin: 0 auto;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: $input-padding;
+    height: $input-height;
+    font-size: $input-fontsize;
+  }
+
+  span {
+    color: #B94A48;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+}
+
+
+/*
+
+  register-confirm-main.php
+
+*/
+#register-confirm-main {
+  margin-top: 100px;
+
+  h1 {
+    font-size: 50px;
+  }
+  
+  .message{
+    padding: 15px 0px;
+  }
+  
+  .return_btn{
+    padding: 15px 0px;
+  }
+}
+
+
